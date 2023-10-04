@@ -17,12 +17,8 @@
   <body>
     <div class="container">
       <div class="card">
-        <img
-          src="https://avatars.githubusercontent.com/u/58006592?v=4"
-          alt="Person"
-          class="card__image"
-        />
-        <p class="card__name">daniel tisoy</p>
+        <img alt="Person" class="card__image" id="user-img" />
+        <p class="card__name" id="user-name">random</p>
         <!----  <div class="grid-container">
           <div class="grid-child-posts">156 Post</div>
 
@@ -30,11 +26,15 @@
         </div> -->
         <ul class="social-icons">
           <li>
-            <a href="#"><i class="fa fa-github"></i></a>
+            <a id="github-anchor" href="#" target="_blank"
+              ><i class="fa fa-github"></i
+            ></a>
           </li>
         </ul>
         <!--class="btn draw-border">Follow</button>-->
-        <button class="btn draw-border">another one</button>
+        <button class="btn draw-border" onclick="getGithubInfo()">
+          another one
+        </button>
       </div>
     </div>
     <script src="resources/js/index.js"></script>
